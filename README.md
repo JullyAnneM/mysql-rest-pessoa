@@ -1,7 +1,7 @@
 # RESTful API with MySQL 
 
 ## Overview
-This project persist data sent through a RESTful API in a MySQL Database.
+This Maven Project persists data sent through a RESTful API in a MySQL Database.
 
 ## Prerequisites
 * Red Hat JBoss Enterprise Application Platform
@@ -11,27 +11,28 @@ This project persist data sent through a RESTful API in a MySQL Database.
 
 ## Installation
 ### Installation of all
-1. At https://access.redhat.com download: 
+1. At https://access.redhat.com download and unzip them in the desired area: 
 * Server file for Red Hat JBoss Enterprise Application Platform.
 * Jar installer for JBoss Developer Studio.
-2. Unzip them into the desired folder.
-3. At https://dev.mysql.com/downloads/mysql/, download the MySQL Community Server.
-4. For Postman, go to www.getpostman.com and download it.
+2. At https://dev.mysql.com/downloads/mysql/, download the MySQL Community Server.
+3. For Postman, go to www.getpostman.com and download it.
 
 ## Configuration
+### MySQL Community Server
+1. Create your user to log into MySQL Community Server.
+2. Create a database called 'Pessoa' after logged in. 
+
 #### Red Hat JBoss Developer Studio
 1. Open the Servers tab.
 2. Click on the `No servers are available. Click this link to create a new server..` link.
 3. Expand Red Hat JBoss Middleware and choose JBoss Enterprise Application Platform 7.0. Enter a server name then click Next.
-2. Create a server adapter to manage starting and stopping the server. Keep the defaults and click Next.
-3. Enter a name, for example JBoss EAP 7.0 Runtime. Click `Browse next to Home Directory` and navigate to your JBoss EAP installation directory, then click Finish.
+4. Create a server adapter to manage starting and stopping the server. Keep the defaults and click Next.
+5. Enter a name, for example JBoss EAP 7.0 Runtime. Click `Browse next to Home Directory` and navigate to your JBoss EAP installation directory, then click Finish.
+6. Create a Datasource 
+7. Connect the JBoss Enterprise Application Platform Datasource with the database created, changing the `persistence.xml` file of this application.
 
-### MySQL Community Server
-1. Setup 
-2. Create user
-3. Connect to EAP.
 
-## Deployment
+## Standalone Deployment
 1. Import the project downloaded here. 
 2. Right-click the project in the `Project Explorer` tab and select `Run As → Run on Server`.
 3. Go to the terminal and use the command `mysql -u user -p`.
