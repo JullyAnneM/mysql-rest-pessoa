@@ -9,20 +9,20 @@ This Maven Project persists data sent through a RESTful API in a MySQL Database.
 * MySQL Community Server.
 * A browser or Postman API
 
-## Installation
+## Installation and Configuration
 ### Installation of all
-1. At https://access.redhat.com download and unzip them in the desired area: 
+1. At https://access.redhat.com, download and unzip the following files into the desired folder: 
 * Server file for Red Hat JBoss Enterprise Application Platform.
 * Jar installer for JBoss Developer Studio.
 2. At https://dev.mysql.com/downloads/mysql/, download the MySQL Community Server.
 3. For Postman, go to www.getpostman.com and download it.
 
-## Configuration
-### MySQL Community Server
+### Configuration
+#### MySQL Community Server
 1. Create your user to log into MySQL Community Server.
 2. Create a database called 'Pessoa' after logged in. 
 
-#### Red Hat JBoss Developer Studio
+##### Red Hat JBoss Developer Studio
 1. Open the Servers tab.
 2. Click on the `No servers are available. Click this link to create a new server..` link.
 3. Expand Red Hat JBoss Middleware and choose JBoss Enterprise Application Platform 7.0. Enter a server name then click Next.
