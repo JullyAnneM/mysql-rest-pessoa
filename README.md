@@ -6,7 +6,7 @@ This project persist data sent through a RESTful API in a MySQL Database.
 ## Prerequisites
 * Red Hat JBoss Enterprise Application Platform
 * Red Hat JBoss Developer Studio
-* MySQL Server.
+* MySQL Community Server.
 * A browser or Postman API
 
 ## Installation
@@ -27,13 +27,16 @@ This project persist data sent through a RESTful API in a MySQL Database.
 3. Enter a name, for example JBoss EAP 7.0 Runtime. Click `Browse next to Home Directory` and navigate to your JBoss EAP installation directory, then click Finish.
 
 ### MySQL Community Server
-1.
-2.
-3.
+1. Setup 
+2. Create user
+3. Connect to EAP.
 
 ## Deployment
 1. Import the project downloaded here. 
 2. Right-click the project in the `Project Explorer` tab and select `Run As → Run on Server`.
+3. Go to the terminal and use the command `mysql -u user -p`.
+4. See the databases with `show databases` and use a specific one with `use database_name`.
+5. See the Data persisted in the specific table with `select * from table_name`.
 
 ## Tests 
 * Persisting Data (make sure to set it to POST with Postman):
