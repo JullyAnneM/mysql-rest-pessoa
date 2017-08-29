@@ -45,6 +45,8 @@ public class Pessoa {
 	public String toString() {
 		String junto = rg + ", " + nome;
 		return junto;
+		return "Pessoa [rg = " + rg + ", nome = " + nome + "]";
+
 	}
 	
 }
